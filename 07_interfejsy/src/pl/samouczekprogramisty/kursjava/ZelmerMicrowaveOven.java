@@ -23,7 +23,7 @@ public class ZelmerMicrowaveOven implements MicrowaveOven {
 
     @Override
     public String getName() {
-        return MicrowaveOven.getName();
+        return MicrowaveOven.super.getName();
     }
 
     @Override
