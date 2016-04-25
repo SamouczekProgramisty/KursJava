@@ -12,7 +12,6 @@ public class PrimitiveTypes {
         Byte b2 = new Byte((byte) 10);
         Byte b3 = 10;
 
-        b3.
         short s1 = 10;
         Short s2 = new Short((short) 10);
         Short s3 = 10;
@@ -27,7 +26,7 @@ public class PrimitiveTypes {
         long l4 = l2;
 
         boolean bo1 = true;
-        Boolean bo2 = new Boolean(true)
+        Boolean bo2 = new Boolean(true);
         Boolean bo3 = true;
 
         char c1 = 'c';
@@ -40,6 +39,6 @@ public class PrimitiveTypes {
 
         double d1 = 1.2;
         Double d2 = new Double(1.2);
-        Double d3 = 1.2
+        Double d3 = 1.2;
     }
 }

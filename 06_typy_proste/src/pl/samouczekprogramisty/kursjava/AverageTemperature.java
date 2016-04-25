@@ -16,7 +16,7 @@ public class AverageTemperature {
             temperature[i] = inputScanner.nextDouble();
         }
 
-1        double summarizedTemp = 0;
+        double summarizedTemp = 0;
         for (double temp : temperature) {
             summarizedTemp += temp;
         }
