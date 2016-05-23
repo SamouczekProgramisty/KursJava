@@ -4,7 +4,6 @@ public class Boxing {
     public static void main(String[] args) {
         autounboxing();
         autoboxing();
-        wideningAutoboxing();
     }
 
     private static void autounboxing() {
