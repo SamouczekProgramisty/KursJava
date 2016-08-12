@@ -1,4 +1,6 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.equality;
+
+import pl.samouczekprogramisty.kursjava.equality.Chair;
 
 public class ComparisionExamples {
 

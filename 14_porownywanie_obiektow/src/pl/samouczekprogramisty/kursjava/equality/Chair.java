@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.equality;
 
 public class Chair {
     private String model;
