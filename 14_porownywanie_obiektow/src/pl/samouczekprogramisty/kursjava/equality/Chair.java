@@ -33,7 +33,8 @@ public class Chair {
                     manufacturer.equals(otherChair.manufacturer) &&
                     productionYear == otherChair.productionYear;
         }
-        return super.equals(obj);
+        return false;
+
     }
 
     public int hashCode() {
