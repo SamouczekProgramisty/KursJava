@@ -28,6 +28,7 @@ public class Main {
                 );
     }
 
+    @SuppressWarnings("unchecked")
     private static void genericClassCastException() {
         BoxOnSteroids boxWithoutType = new BoxOnSteroids(new Apple());
         BoxOnSteroids<Apple> boxWithApple = boxWithoutType;

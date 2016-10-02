@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class NamesDatabase {
     private static final String STOP = "-";
 
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         try (ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream("names.db"))) {
             output.writeObject(getNamesFromUser());
