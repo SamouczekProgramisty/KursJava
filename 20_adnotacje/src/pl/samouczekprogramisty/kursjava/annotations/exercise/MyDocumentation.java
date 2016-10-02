@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.annotations.excercise;
+package pl.samouczekprogramisty.kursjava.annotations.exercise;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.annotations.excercise;
+package pl.samouczekprogramisty.kursjava.annotations.exercise;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.List;
 
-@MyDocumentation(comment = "Sample for excercise")
+@MyDocumentation(comment = "Sample for exercise")
 public class AnnotationProcessor {
 
     private static List<String> SKIP_METHODS = Arrays.asList("equals", "toString", "hashCode", "annotationType");
