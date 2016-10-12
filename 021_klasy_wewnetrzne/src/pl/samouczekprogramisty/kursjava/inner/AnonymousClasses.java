@@ -1,7 +1,7 @@
 package pl.samouczekprogramisty.kursjava.inner;
 
 public class AnonymousClasses {
-    private static class Robot {
+    public static class Robot {
         private final GreetingModule greetingModule;
 
         public Robot(GreetingModule greetingModule) {
@@ -13,7 +13,7 @@ public class AnonymousClasses {
         }
     }
 
-    private interface GreetingModule {
+    public interface GreetingModule {
         void sayHello();
     }
 
