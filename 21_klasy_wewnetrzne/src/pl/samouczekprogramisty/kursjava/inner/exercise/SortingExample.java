@@ -1,8 +1,5 @@
 package pl.samouczekprogramisty.kursjava.inner.exercise;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedList;
