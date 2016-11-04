@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.loops;
 
 /**
  * Created by mapi on 14.11.15.

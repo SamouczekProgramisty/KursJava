@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.exercise;
+package pl.samouczekprogramisty.kursjava.loops.exercise;
 
 public class Exercise3 {
     public static void main(String[] args) {
