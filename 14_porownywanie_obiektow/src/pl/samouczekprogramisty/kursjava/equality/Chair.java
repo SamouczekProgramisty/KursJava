@@ -23,6 +23,7 @@ public class Chair {
         return productionYear;
     }
 
+    @Override
     public boolean equals(Object obj) {
         if (obj == null) {
             return false;
@@ -37,6 +38,7 @@ public class Chair {
 
     }
 
+    @Override
     public int hashCode() {
         return model.hashCode() + manufacturer.hashCode() + productionYear;
     }
