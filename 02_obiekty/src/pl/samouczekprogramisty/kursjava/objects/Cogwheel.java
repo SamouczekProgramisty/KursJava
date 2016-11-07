@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.engine;
+package pl.samouczekprogramisty.kursjava.objects;
 
 
 public class Cogwheel {

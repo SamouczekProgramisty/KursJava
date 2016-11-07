@@ -1,6 +1,4 @@
-package pl.samouczekprogramisty.kursjava;
-
-import pl.samouczekprogramisty.kursjava.engine.Cogwheel;
+package pl.samouczekprogramisty.kursjava.objects;
 
 public class Engine {
 
