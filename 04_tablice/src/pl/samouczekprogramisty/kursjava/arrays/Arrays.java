@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.arrays;
 
 /**
  * Created by mapi on 09.11.15.
