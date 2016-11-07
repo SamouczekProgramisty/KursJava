@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.simpletypes;
+package pl.samouczekprogramisty.kursjava.primitivetypes;
 
 import pl.samouczekprogramisty.kursjava.loops.LoopsExcercises;
 

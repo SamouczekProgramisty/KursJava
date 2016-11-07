@@ -1,12 +1,7 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.primitivetypes;
 
-import java.util.Random;
 
-/**
- * Created by mapi on 24.11.15.
- */
 public class PrimitiveTypes {
-
     public static void main(String[] args) {
         byte b1 = 10;
         Byte b2 = new Byte((byte) 10);

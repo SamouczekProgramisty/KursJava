@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.primitivetypes.exercise;
 
 import java.util.Scanner;
 

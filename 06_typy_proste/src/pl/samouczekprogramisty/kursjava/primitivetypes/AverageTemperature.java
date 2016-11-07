@@ -1,12 +1,9 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.primitivetypes;
 
 import java.util.Scanner;
 
-/**
- * Created by mapi on 27.11.15.
- */
-public class AverageTemperature {
 
+public class AverageTemperature {
     public static void main(String[] args) {
         double[] temperature = new double[7];
         Scanner inputScanner = new Scanner(System.in);
@@ -31,5 +28,4 @@ public class AverageTemperature {
 
         System.out.println("Średnia temperatura wynosi " + (summarizedTemp / temperature.length));
     }
-
 }
