@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.genericinteritance;
+package pl.samouczekprogramisty.kursjava.generics.genericinteritance;
 
 public class StandardBox<T> {
     public T object;

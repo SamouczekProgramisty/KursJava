@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.extendexample;
+package pl.samouczekprogramisty.kursjava.generics.extendexample;
 
 public class BoxForFigures<T extends Figure> {
     private T element;

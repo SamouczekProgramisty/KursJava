@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.extendexample;
+package pl.samouczekprogramisty.kursjava.generics.extendexample;
 
 public class Rectangle implements Figure {
     public String getName() {

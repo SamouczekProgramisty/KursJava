@@ -1,10 +1,10 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.generics;
 
-import pl.samouczekprogramisty.kursjava.extendexample.Circle;
-import pl.samouczekprogramisty.kursjava.extendexample.Figure;
-import pl.samouczekprogramisty.kursjava.extendexample.Rectangle;
-import pl.samouczekprogramisty.kursjava.extendexample.Square;
-import pl.samouczekprogramisty.kursjava.genericinteritance.FancyBox;
+import pl.samouczekprogramisty.kursjava.generics.extendexample.Circle;
+import pl.samouczekprogramisty.kursjava.generics.extendexample.Figure;
+import pl.samouczekprogramisty.kursjava.generics.extendexample.Rectangle;
+import pl.samouczekprogramisty.kursjava.generics.extendexample.Square;
+import pl.samouczekprogramisty.kursjava.generics.genericinteritance.FancyBox;
 
 public class WildcardExamples {
 

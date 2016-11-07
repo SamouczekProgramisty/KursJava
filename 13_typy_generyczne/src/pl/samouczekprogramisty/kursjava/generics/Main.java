@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.generics;
 
 public class Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.genericinteritance;
+package pl.samouczekprogramisty.kursjava.generics.genericinteritance;
 
 public class FancyBox<T> extends StandardBox<T> {
     public FancyBox(T object) {
