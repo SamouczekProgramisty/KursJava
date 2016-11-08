@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.exercise;
+package pl.samouczekprogramisty.kursjava.interfaces.exercise;
 
 /**
  * Created by mapi on 15.12.15.

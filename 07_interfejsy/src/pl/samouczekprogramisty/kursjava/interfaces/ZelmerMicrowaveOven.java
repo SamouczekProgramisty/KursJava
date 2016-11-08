@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.interfaces;
 
 import java.util.Calendar;
 import java.util.Date;

@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava;
+package pl.samouczekprogramisty.kursjava.interfaces;
 
 public interface MicrowaveOven {
 

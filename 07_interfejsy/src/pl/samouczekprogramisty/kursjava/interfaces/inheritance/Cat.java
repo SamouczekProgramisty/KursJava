@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.inheritance;
+package pl.samouczekprogramisty.kursjava.interfaces.inheritance;
 
 /**
  * Created by mapi on 15.12.15.
