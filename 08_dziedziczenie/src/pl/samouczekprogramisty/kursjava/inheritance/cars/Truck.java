@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.cars;
+package pl.samouczekprogramisty.kursjava.inheritance.cars;
 
 public class Truck extends Vehicle {
     private static final int NUMBER_OF_WHEELS = 12;

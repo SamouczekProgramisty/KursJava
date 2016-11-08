@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.cars;
+package pl.samouczekprogramisty.kursjava.inheritance.cars;
 
 class X {
 

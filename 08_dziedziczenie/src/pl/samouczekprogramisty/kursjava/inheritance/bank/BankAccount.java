@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.kursjava.bank;
+package pl.samouczekprogramisty.kursjava.inheritance.bank;
 
 import java.math.BigDecimal;
 
