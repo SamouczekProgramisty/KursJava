@@ -44,19 +44,25 @@ public class MethodsExcercises {
     }
 
     private static boolean canConstructTriangle(double number1, double number2, double number3) {
+        // double[] sides = new double[] {number1, number2, number3};
+        // Arrays.sort(sides);
+        // return sides[0] * sides[0] + sides[1] * sides[1] == sides[2] * sides[2];
+
         double longest = number1;
         double side1 = number2;
         double side2 = number3;
 
-        if (number2 > longest) {
-            side1 = number1;
+        if (number2 > number1 && number2 > number3) {
             longest = number2;
+            side1 = number1;
+            side2 = number3;
         }
-        if (number3 > longest) {
-            side2 = number2;
+        else if (number3 > number1 && number3 > number2) {
             longest = number3;
+            side1 = number1;
+            side2 = number2;
         }
 
-        return longest * longest == side1 * side1 + side2 * side2;
+        return side1 * side1 + side2 * side2 == longest * longest;
     }
 }
