@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.number;
+package pl.samouczekprogramisty.kursjava.number;
 
 public class Range {
     private final long lowerBound;

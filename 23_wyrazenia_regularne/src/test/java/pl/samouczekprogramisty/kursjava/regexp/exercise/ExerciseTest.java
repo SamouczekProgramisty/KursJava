@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.regexp.exercise;
+package pl.samouczekprogramisty.kursjava.regexp.exercise;
 
 import org.junit.Test;
 

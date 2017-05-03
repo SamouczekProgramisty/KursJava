@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.number;
+package pl.samouczekprogramisty.kursjava.number;
 
 import org.junit.After;
 import org.junit.AfterClass;

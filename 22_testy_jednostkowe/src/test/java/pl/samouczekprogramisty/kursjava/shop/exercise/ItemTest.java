@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.shop.exercise;
+package pl.samouczekprogramisty.kursjava.shop.exercise;
 
 import org.junit.Test;
 

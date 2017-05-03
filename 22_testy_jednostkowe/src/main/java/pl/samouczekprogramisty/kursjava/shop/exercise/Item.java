@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.shop.exercise;
+package pl.samouczekprogramisty.kursjava.shop.exercise;
 
 public final class Item implements Comparable<Item> {
     private final String name;

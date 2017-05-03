@@ -1,4 +1,4 @@
-package pl.samouczekprogramisty.regexp;
+package pl.samouczekprogramisty.kursjava.regexp;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
