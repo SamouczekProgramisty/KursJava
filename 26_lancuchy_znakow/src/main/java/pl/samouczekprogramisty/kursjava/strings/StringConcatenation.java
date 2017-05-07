@@ -13,9 +13,7 @@ public class StringConcatenation {
 
     public void plusSingnBehaviour() {
         System.out.println(1 + 2 + "test"); // 3test
-        System.out.println("test" + 1 + 2); //
-
-        "".concat()
+        System.out.println("test" + 1 + 2); // test12
     }
 
     public void compilerConcatenationFiddling() {
