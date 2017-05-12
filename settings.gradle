@@ -26,4 +26,5 @@ include '23_wyrazenia_regularne'
 include '24_wyrazenia_regularne'
 include '25_linia_polecen'
 include '26_lancuchy_znakow'
+include '27_lancuchy_znakow_formatowanie'
 
