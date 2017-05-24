@@ -30,4 +30,9 @@ public class MyNumber {
     public MyNumber subract(MyNumber otherValue) {
         return new MyNumber(value - otherValue.value);
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(value);
+    }
 }
