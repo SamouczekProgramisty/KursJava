@@ -1,5 +1,6 @@
 rootProject.name = 'KursJava'
 
+include '01_metody'
 include '02_obiekty'
 include '03_pierwszy_program'
 include '04_tablice'
