@@ -33,8 +33,8 @@ public class ComparisionExamples {
     }
 
     private static void rawFloatingPointComparison() {
-        System.out.println("10.123 == 10.123: " + (10.123 == 10.123)); // !!!
-        System.out.println("10.123 == 10.123: " + (Math.abs(10.123 - 10.123) < 0.000001));
+        System.out.println("0.3 == 0.1 + 0.2: " + (0.3 == 0.1 + 0.2)); // !!!
+        System.out.println("0.3 == 0.1 + 0.2: " + (Math.abs(0.3 - (0.1 + 0.2)) < 0.000001));
     }
 
     private static void rawTypesComparison() {
