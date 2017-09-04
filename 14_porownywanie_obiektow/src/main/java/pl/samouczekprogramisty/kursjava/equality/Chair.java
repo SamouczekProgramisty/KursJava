@@ -40,6 +40,6 @@ public class Chair {
 
     @Override
     public int hashCode() {
-        return model.hashCode() + manufacturer.hashCode() + productionYear;
+        return 17 * model.hashCode() + 31 * manufacturer.hashCode() + 7 * productionYear;
     }
 }
