@@ -1,8 +1,5 @@
 package pl.samouczekprogramisty.kursjava.exception;
 
-/**
- * Created by mapi on 30.01.16.
- */
 public class ExceptionInheritance {
     public static void main(String[] args) {
         multipleCatchBlocks();
