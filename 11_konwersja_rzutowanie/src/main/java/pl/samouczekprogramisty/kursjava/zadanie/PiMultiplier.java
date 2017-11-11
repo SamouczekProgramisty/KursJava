@@ -20,6 +20,7 @@ public class PiMultiplier {
             }
             catch (NoSuchElementException | IllegalStateException exception) {
                 System.out.println("Wpwowadziłeś niepoprawną liczbę, spróbuj jeszcze raz...");
+                scanner.next();
             }
         }
     }
