@@ -10,7 +10,7 @@ public class OuterClass {
     public interface InnerInterface {
     }
 
-    public InnerClass intantiate() {
+    public InnerClass instantiate() {
         return new InnerClass();
     }
 }
