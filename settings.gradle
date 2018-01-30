@@ -30,4 +30,5 @@ include '26_lancuchy_znakow'
 include '27_lancuchy_znakow_formatowanie'
 include '28_wyrazenia_lambda'
 include '29_modyfikatory_dostepu'
+include '30_strumienie'
 
