@@ -144,7 +144,23 @@ public class BasketTest {
 
         expectedValue.append(String.format(Basket.ITEM_ORDER_FORMAT, toy.getName(), toy.getPrice(), 2, toy.getPrice() * 2));
         expectedValue.append(System.lineSeparator());
-        expectedValue.append(String.format("Total: %.2f", basket.getOrderValue()));
+        expectedValue.append(String.format("Total: %.2f", 79.98));
+
+        assertEquals(expectedValue.toString(), basket.toString());
+    }
+
+    @Test
+    public void shouldDifferentiateBetweenToysWithSameNameDifferentPrice() {
+        basket.add(new Item("otherToy", 10));
+        basket.add(new Item("otherToy", 20));
+
+        StringBuilder expectedValue = new StringBuilder();
+
+        expectedValue.append(String.format(Basket.ITEM_ORDER_FORMAT, "otherToy", 10.0, 1, 10.0));
+        expectedValue.append(System.lineSeparator());
+        expectedValue.append(String.format(Basket.ITEM_ORDER_FORMAT, "otherToy", 20.0, 1, 20.0));
+        expectedValue.append(System.lineSeparator());
+        expectedValue.append(String.format("Total: %.2f", 30.0));
 
         assertEquals(expectedValue.toString(), basket.toString());
     }

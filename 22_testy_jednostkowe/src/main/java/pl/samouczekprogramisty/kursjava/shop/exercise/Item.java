@@ -44,6 +44,10 @@ public final class Item implements Comparable<Item> {
         if (other == null) {
             return 1;
         }
-        return this.getName().compareTo(other.getName());
+        int comparision = this.getName().compareTo(other.getName());
+        if (comparision != 0) {
+            return comparision;
+        }
+        return Double.compare(this.getPrice(), other.getPrice());
     }
 }

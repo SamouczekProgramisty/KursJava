@@ -32,4 +32,9 @@ public class ItemTest {
     public void itemsWithDifferentNameShouldHaveDifferentHashCode() {
         assertNotEquals(new Item("item1", 123).hashCode(), new Item("item2", 321).hashCode());
     }
+
+    @Test
+    public void itemsWithDifferentPriceAndTheSameNameShouldBeOrdered() {
+        assertEquals(-1, new Item("item1", 0.1).compareTo(new Item("item1", 0.2)));
+    }
 }
