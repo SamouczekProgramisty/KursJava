@@ -28,6 +28,8 @@ public class WildcardExamples {
     private static void method2(FancyBox<? extends Figure> box) {
         Figure figure = box.object;
         System.out.println(figure);
+        box.object = null;
+        // box.object = new Square(); // compilation error
     }
 
     private static void method3(FancyBox<Figure> box) {
@@ -36,22 +38,31 @@ public class WildcardExamples {
     }
 
     private static void upperBoundWildcard() {
-        method2(new FancyBox<>(new Square()));
-        method2(new FancyBox<>(new Circle()));
-        //method3(new FancyBox<Square>(new Square())); // compilation error
+        FancyBox<Figure> fancyFigureBox = new FancyBox<>(new Circle());
+        FancyBox<Circle> fancyCircleBox = new FancyBox<>(new Circle());
+        FancyBox<Square> fancySquareBox = new FancyBox<>(new Square());
+        method2(fancyFigureBox);
+        method2(fancyCircleBox);
+        method2(fancySquareBox);
+        // method3(fancySquareBox); // compilation error
     }
 
     private static void method4(FancyBox<? super Rectangle> box) {
-        box.object = new Square();
+        box.object = null;
         box.object = new Rectangle();
-        //box.object = new Circle(); // compilation error
+        box.object = new Square();
+        // box.object = new Object(); // compilation error
     }
 
     private static void lowerBoundWildcard() {
-        method4(new FancyBox<Rectangle>(new Rectangle()));
-        method4(new FancyBox<Figure>(new Rectangle()));
-        method4(new FancyBox<Object>(new Object()));
-        //method4(new FancyBox<Square>(new Square())); // compilation error
+        FancyBox<Rectangle> fancyRectangleBox = new FancyBox<>(new Rectangle());
+        FancyBox<Figure> fancyFiguraBox = new FancyBox<>(new Rectangle());
+        FancyBox<Object> fancyObjectBox = new FancyBox<>(new Object());
+        method4(fancyRectangleBox);
+        method4(fancyFiguraBox);
+        method4(fancyObjectBox);
+        // FancyBox<Square> fancySquareBox = new FancyBox<>(new Square());
+        // method4(fancySquareBox); // compilation error
     }
 
 }
