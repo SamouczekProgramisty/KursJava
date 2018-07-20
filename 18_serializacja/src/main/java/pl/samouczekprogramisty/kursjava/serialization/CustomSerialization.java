@@ -20,7 +20,6 @@ public class CustomSerialization implements Serializable {
     }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        System.out.println(Calendar.getInstance().get(Calendar.YEAR));
         CustomSerialization writtenObject = new CustomSerialization(10, "something");
 
         try (ObjectOutputStream outputStream = new ObjectOutputStream(new FileOutputStream("custom-serialization.bin"))) {
@@ -35,12 +34,12 @@ public class CustomSerialization implements Serializable {
     }
 
     private void readObject(ObjectInputStream stream) throws IOException, ClassNotFoundException {
+        stream.defaultReadObject();
         someField = stream.readInt();
-        otherField = stream.readUTF();
     }
 
     private void writeObject(ObjectOutputStream stream) throws IOException {
-        stream.writeInt(someField);
-        stream.writeUTF(otherField + " SERIALIZED!");
+        stream.defaultWriteObject();
+        stream.writeInt(someField + 1000);
     }
 }
