@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // json-p specification
+    compile group: 'javax.json', name: 'javax.json-api', version: '1.1.2'
+    // json-b specification
+    compile group: 'javax.json.bind', name: 'javax.json.bind-api', version: '1.0'
+
+    // json-p implementation
+    compile group: 'org.glassfish', name: 'javax.json', version: '1.1.2'
+    // json-b implementation
+    compile group: 'org.eclipse', name: 'yasson', version: '1.0.1'
+
+}

@@ -68,7 +68,7 @@ public class JSONPExamples {
                     System.out.println(parser.getBigDecimal());
                     break;
                 case VALUE_STRING:
-                    System.out.println(parser.getString());
+                    System.out.println(String.format("\"%s\"", parser.getString()));
                     break;
                 default:
                     System.out.println("true, false or null");
