@@ -32,4 +32,5 @@ include '28_wyrazenia_lambda'
 include '29_modyfikatory_dostepu'
 include '30_strumienie'
 include '31_testy_jednostkowe_junit5'
+include '32_format_json'
 
