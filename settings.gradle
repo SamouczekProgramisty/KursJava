@@ -33,4 +33,5 @@ include '29_modyfikatory_dostepu'
 include '30_strumienie'
 include '31_testy_jednostkowe_junit5'
 include '32_format_json'
+include '33_testy_z_mock_stub_spy'
 
