@@ -9,12 +9,12 @@ class FlightScannerTestMocks {
 
     private static final class AirlineMock implements Airline {
 
-        private static final class InvocationMethod {
+        private static final class MethodInvocation {
             String departureAirport;
             String arrivalAirport;
             LocalDate flightDate;
 
-            InvocationMethod(String departureAirport, String arrivalAirport, LocalDate flightDate) {
+            MethodInvocation(String departureAirport, String arrivalAirport, LocalDate flightDate) {
                 this.departureAirport = departureAirport;
                 this.arrivalAirport = arrivalAirport;
                 this.flightDate = flightDate;
@@ -22,12 +22,16 @@ class FlightScannerTestMocks {
 
             @Override
             public boolean equals(Object o) {
-                if (this == o) return true;
-                if (o == null || getClass() != o.getClass()) return false;
-                InvocationMethod invocationMethod = (InvocationMethod) o;
-                return Objects.equals(departureAirport, invocationMethod.departureAirport) &&
-                        Objects.equals(arrivalAirport, invocationMethod.arrivalAirport) &&
-                        Objects.equals(flightDate, invocationMethod.flightDate);
+                if (this == o) {
+                    return true;
+                }
+                if (o == null || getClass() != o.getClass()) {
+                    return false;
+                }
+                MethodInvocation methodInvocation = (MethodInvocation) o;
+                return Objects.equals(departureAirport, methodInvocation.departureAirport) &&
+                        Objects.equals(arrivalAirport, methodInvocation.arrivalAirport) &&
+                        Objects.equals(flightDate, methodInvocation.flightDate);
             }
 
             @Override
@@ -36,10 +40,10 @@ class FlightScannerTestMocks {
             }
         }
 
-        private final Set<InvocationMethod> invocations = new HashSet<>();
+        private final Set<MethodInvocation> invocations = new HashSet<>();
 
         void verifyCalled(String departureAirport, String destinationAirport, LocalDate flightDate) {
-            boolean wasCalled = invocations.contains(new InvocationMethod(departureAirport, destinationAirport, flightDate));
+            boolean wasCalled = invocations.contains(new MethodInvocation(departureAirport, destinationAirport, flightDate));
             if (!wasCalled) {
                 throw new AssertionError("One of the expected invocations wasn't called!");
             }
@@ -47,11 +51,10 @@ class FlightScannerTestMocks {
 
         @Override
         public List<Flight> findFlight(String departureAirport, String destinationAirport, LocalDate flightDate) {
-            invocations.add(new InvocationMethod(departureAirport, destinationAirport, flightDate));
+            invocations.add(new MethodInvocation(departureAirport, destinationAirport, flightDate));
             return Collections.emptyList();
         }
     }
-
 
     @Test
     void shouldFindLowestPrice() {
