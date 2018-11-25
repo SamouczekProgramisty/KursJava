@@ -12,7 +12,14 @@ public class Exercise2 {
         return biggest;
     }
 
-    public int biggestWithoutIf(int [] numbers) {
+    public int biggestWithoutIf(int[] numbers) {
         return Math.max(numbers[0], Math.max(numbers[1], numbers[2]));
+    }
+
+    public static void main(String[] args) {
+        Exercise2 exercise = new Exercise2();
+        int[] numbers = new int[]{1, 3, -5};
+        System.out.println(exercise.biggest(numbers));
+        System.out.println(exercise.biggestWithoutIf(numbers));
     }
 }

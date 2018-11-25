@@ -1,7 +1,9 @@
 package pl.samouczekprogramisty.kursjava.arrays.exercise;
 
+import java.util.Arrays;
+
 public class Exercise3 {
-    private Integer[][] board = new Integer[9][9];
+    private Integer[][] board;
 
     public Exercise3(Integer[][] board) {
         this.board = board;
@@ -22,5 +24,10 @@ public class Exercise3 {
            new Integer[] {null, null, 5,    2,    null, 6,    null, null, 8}
         };
         return new Exercise3(board);
+    }
+
+    public static void main(String[] args) {
+        Exercise3 sampleBoard = sampleBoard();
+        System.out.println(Arrays.deepToString(sampleBoard.board));
     }
 }

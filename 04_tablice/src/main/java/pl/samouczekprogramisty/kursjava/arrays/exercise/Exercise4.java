@@ -1,6 +1,8 @@
 package pl.samouczekprogramisty.kursjava.arrays.exercise;
 
 
+import java.util.Arrays;
+
 public class Exercise4 {
     // Sa lepsze sposoby, jednak na tym etapie taki sposob jest OK :)
     // Jesli jestes ciekawy jak zrobic to lepiej poczytaj o typie wyliczeniowym.
@@ -33,6 +35,11 @@ public class Exercise4 {
             new int[] {EMPTY,    EMPTY,    EMPTY,    B_ROOK,   EMPTY,   EMPTY,    EMPTY,    EMPTY},
             new int[] {EMPTY,    W_KING,   EMPTY,    EMPTY,    EMPTY,   EMPTY,    EMPTY,    EMPTY},
         };
+    }
+
+    public static void main(String[] args) {
+        int[][] finalState = game5FinalState();
+        System.out.println(Arrays.toString(finalState));
     }
 
 }
