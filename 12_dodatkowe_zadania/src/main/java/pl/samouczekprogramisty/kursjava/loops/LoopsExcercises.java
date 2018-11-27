@@ -93,11 +93,12 @@ public class LoopsExcercises {
 
     public static void bubbleSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
-                if (array[i] < array[j]) {
-                    int tmp = array[j];
-                    array[j] = array[i];
-                    array[i] = tmp;
+            for (int current = 0; current < array.length - 1 - i; current++) {
+                int next = current + 1;
+                if (array[current] > array[next]) {
+                    int tmp = array[next];
+                    array[next] = array[current];
+                    array[current] = tmp;
                 }
             }
         }
