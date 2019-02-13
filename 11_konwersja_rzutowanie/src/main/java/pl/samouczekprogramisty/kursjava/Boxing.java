@@ -7,11 +7,11 @@ public class Boxing {
     }
 
     private static void autounboxing() {
-        int primitiveInt = new Integer(123);
-        long primitiveLong = new Long(123L);
-        float primitiveFloat = new Float(123.123F);
-        double primitiveDouble = new Double(123.123);
-        boolean primitiveBoolean = new Boolean(true);
+        int primitiveInt = Integer.valueOf(123);
+        long primitiveLong = Long.valueOf(123L);
+        float primitiveFloat = Float.valueOf(123.123F);
+        double primitiveDouble = Double.valueOf(123.123);
+        boolean primitiveBoolean = Boolean.valueOf(true);
     }
 
     private static void autoboxing() {

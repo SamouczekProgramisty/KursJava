@@ -1,12 +1,14 @@
 package pl.samouczekprogramisty.kursjava.inner;
 
+import java.lang.reflect.InvocationTargetException;
+
 public class AnonymousCheating {
 
     private interface SomeInterface {
         void doSomethingUseful();
     }
 
-    public static void main(String[] args) throws InstantiationException, IllegalAccessException {
+    public static void main(String[] args) throws InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         SomeInterface anonymousInstance = new SomeInterface() {
             @Override
             public void doSomethingUseful() {
@@ -15,14 +17,6 @@ public class AnonymousCheating {
         };
 
         anonymousInstance.doSomethingUseful();
-        cheatCompiler(anonymousInstance.getClass());
+        System.out.println(anonymousInstance.getClass());
     }
-
-    private static void cheatCompiler(Class<? extends SomeInterface> anonymousClass) throws IllegalAccessException, InstantiationException {
-        SomeInterface otherInstance1 = anonymousClass.newInstance();
-        SomeInterface otherInstance2 = anonymousClass.newInstance();
-
-        System.out.println(otherInstance1 == otherInstance2);
-    }
-
 }
