@@ -10,7 +10,7 @@ public class MethodsExcercises {
         System.out.println(couldDivideBy3and5(15));
         System.out.println(thirdPow(4));
         System.out.println(sqrt(4));
-        System.out.println(canConstructTriangle(3, 4, 5));
+        System.out.println(canConstructRightAngledTriangle(3, 4, 5));
     }
 
     private static int getMyAge() {
@@ -43,7 +43,10 @@ public class MethodsExcercises {
         return Math.sqrt(number);
     }
 
-    private static boolean canConstructTriangle(double number1, double number2, double number3) {
+    private static boolean canConstructRightAngledTriangle(double number1, double number2, double number3) {
+        if (number1 < 0 || number2 < 0 || number3 < 0) {
+            return false;
+        }
         // double[] sides = new double[] {number1, number2, number3};
         // Arrays.sort(sides);
         // return sides[0] * sides[0] + sides[1] * sides[1] == sides[2] * sides[2];
