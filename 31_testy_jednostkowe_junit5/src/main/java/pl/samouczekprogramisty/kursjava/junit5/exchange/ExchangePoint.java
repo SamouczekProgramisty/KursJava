@@ -13,10 +13,10 @@ public class ExchangePoint {
     private final BigDecimal bidSpread;
 
     public ExchangePoint(BigDecimal spread, RatesProvider ratesProvider) {
-        if (spread.compareTo(BigDecimal.ZERO) == -1) {
+        if (spread.compareTo(BigDecimal.ZERO) < 0) {
             throw new IllegalArgumentException(String.format("Spread %s is illegal! Spread must be positive!", spread));
         }
-        if (spread.compareTo(BigDecimal.ONE) != -1) {
+        if (spread.compareTo(BigDecimal.ONE) >= 0) {
             throw new IllegalArgumentException(String.format("Spread %s is illegal! Spread must be smaller than 1!", spread));
         }
         this.askSpread = BigDecimal.ONE.add(spread).setScale(SCALE, ROUNDING_MODE);
@@ -25,14 +25,14 @@ public class ExchangePoint {
     }
 
     public BigDecimal getBidPrice(BigDecimal amount, Currency from, Currency to) {
-        return getBigDecimal(amount, from, to, bidSpread);
+        return getExchangePrice(amount, from, to, bidSpread);
     }
 
     public BigDecimal getAskPrice(BigDecimal amount, Currency from, Currency to) {
-        return getBigDecimal(amount, from, to, askSpread);
+        return getExchangePrice(amount, from, to, askSpread);
     }
 
-    private BigDecimal getBigDecimal(BigDecimal amount, Currency from, Currency to, BigDecimal spread) {
+    private BigDecimal getExchangePrice(BigDecimal amount, Currency from, Currency to, BigDecimal spread) {
         BigDecimal rate = ratesProvider.getRate(from, to);
         BigDecimal amountInDesiredCurrency = amount.multiply(rate);
         return amountInDesiredCurrency.multiply(spread);
