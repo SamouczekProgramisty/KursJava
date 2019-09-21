@@ -4,6 +4,9 @@ dependencies {
     testImplementation group: 'org.mockito', name: 'mockito-core', version: '3.0.0'
     testImplementation group: 'org.mockito', name: 'mockito-junit-jupiter', version: '3.0.0'
     testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.3.2'
+
+    compile group: 'jakarta.json.bind', name: 'jakarta.json.bind-api', version: '1.0.2'
+    compile group: 'org.eclipse', name: 'yasson', version: '1.0.5'
 }
 
 test {
