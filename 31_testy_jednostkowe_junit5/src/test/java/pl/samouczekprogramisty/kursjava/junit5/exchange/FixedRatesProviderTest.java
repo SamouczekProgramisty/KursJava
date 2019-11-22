@@ -21,7 +21,7 @@ class FixedRatesProviderTest {
     @Test
     void shouldReturnKnownRate() {
         rates.setRate(Currency.EUR, Currency.PLN, new BigDecimal("4.3727"));
-        assertThat(rates.getRate(Currency.EUR, Currency.PLN), is(new BigDecimal("4.3737")));
+        assertThat(rates.getRate(Currency.EUR, Currency.PLN), is(new BigDecimal("4.3727")));
     }
 
     @Test
