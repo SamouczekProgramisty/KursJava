@@ -1,5 +1,6 @@
 package pl.samouczekprogramisty.kursjava.interfaces;
 
+import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -7,7 +8,7 @@ public class ZelmerMicrowaveOven implements MicrowaveOven {
 
     private int durationInSeconds = 90;
     private int power = 600;
-    private Date start = null;
+    private LocalDateTime start = null;
 
     private Clock clock;
 
@@ -17,8 +18,7 @@ public class ZelmerMicrowaveOven implements MicrowaveOven {
 
     @Override
     public void start() {
-        Calendar startCalendar = Calendar.getInstance();
-        start = startCalendar.getTime();
+        start = LocalDateTime.now();
     }
 
     @Override

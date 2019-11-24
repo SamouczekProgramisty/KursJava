@@ -1,7 +1,7 @@
 package pl.samouczekprogramisty.kursjava.interfaces;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 public interface Clock {
-    long secondsElapsedSince(Date date);
+    long secondsElapsedSince(LocalDateTime date);
 }
