@@ -24,6 +24,8 @@ public class Arrays {
         ticTacToeBoard[1] = new int[3];
         ticTacToeBoard[2] = new int[3];
 
+        int[][] ticTacToeBoard2 = new int[3][3];
+         
         Object[] x = new Object[123];
         x[0] = "";
         x[1] = 1;
